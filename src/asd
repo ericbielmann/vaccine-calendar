@@ -1,0 +1,19 @@
+Hola Eric,
+ 
+Te cuento sobre el Work Trial: necesitamos un componente React, que pueda desplegar un calendario de vacunación, con información dinámica (tipo de vacunas, vacunas ya aplicadas y marcador de la edad de paciente). Algo parecido a esto https://www.drugwatch.com/wp-content/uploads/Immunization-Infants-to-Preschool-Aged.png.
+ 
+Criterios:
+- La estructura del calendario/tabla es dada por configuración, es decir que vienen como parámetro disociado del resto de los datos.
+- Como se ve en la imagen, los ejes son Rango Etario para las columnas, y Tipo de Vacunas (Vaccine) para las filas
+- Por cada fila asumí que viene cada Vaccine (id, name, recommendedAdministrations)
+- Los recommendedAdministrations son rangos de tiempo para cuando las dosis deberían ser aplicadas de cada vacuna, vos definis cuál sería la estructura de datos conveniente considerando que tenemos que usar esos datos para ubicar las Vacccinations en la matris. Cada Vaccine tiene N número de dosis (Vaccinations).
+- Del paciente vas a recibir las Vaccinations que le fueron aplicadas como una lista (id de Vaccine y fecha)
+- El modelo de datos en general lo definis vos, tene en cuenta que las entidades existentes son Patient, Vaccine (tipo de vacuna) y Vaccination (evento vacunación, que relaciona Patient con Vaccine).
+ 
+Stack:
+- Typescript
+- React
+- Semantic UI (https://react.semantic-ui.com/) -- o alguna solución abstracta que pueda ser fácilmente implementados con semantic, lo que te sea más cómodo. Te recomiendo darte el tiempo de investigar los componentes y las posibilidades que ofrece.
+ 
+La idea NO es que lo hagas rápido, las 10hs son un parámetro de esfuerzo. Esto no es meramente una prueba técnica, realmente queremos usar lo que hagas.
+
