@@ -30,6 +30,7 @@ const Table = styled.div(({ ageRangeCount }: any) => ({
 
 const VaccineName = styled.div(({ vaccineName }: any) => ({
   gridColumnStart: 1,
+  whiteSpace: "nowrap",
 }));
 
 const Dose = styled.div(({ from, to, vaccineIndex, color }: any) => ({
@@ -39,7 +40,7 @@ const Dose = styled.div(({ from, to, vaccineIndex, color }: any) => ({
   display: "grid",
   margin: "0 8px",
   gridTemplateColumns: `repeat(${to - from}, 1fr)`,
-  background: lighten(0.2)(color),
+  background: lighten(0.25)(color),
   borderRadius: "5rem",
 }));
 

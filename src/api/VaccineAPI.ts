@@ -1,5 +1,5 @@
 export const getVaccines = () => {
-  return Promise.resolve(["HepB", "Rotavirus*", "DTaP", "Hib", "Pneumococcal"]);
+  return Promise.resolve(["HepB", "Rotavirus*", "DTaP", "Hib", "Pneumococcal", "Polio", "Influenza (flu)**", "MMR", "Varicela (Chickenpox)", "HepA***"]);
 };
 
 export const getApplications = () => {
@@ -14,7 +14,7 @@ export const getApplications = () => {
     },
     {
       vaccine: "Rotavirus*",
-      color: "#FF6F52",
+      color: "#F6CD79",
       dosis: [
         { name: "1st dose", from: "2MONTHS", to: "2MONTHS" },
         { name: "2nd dose", from: "4MONTHS", to: "4MONTHS" },
@@ -23,7 +23,7 @@ export const getApplications = () => {
     },
     {
       vaccine: "DTaP",
-      color: "#FF6F52",
+      color: "#C5476A",
       dosis: [
         { name: "1st dose", from: "2MONTHS", to: "2MONTHS" },
         { name: "2nd dose", from: "4MONTHS", to: "4MONTHS" },
@@ -34,7 +34,7 @@ export const getApplications = () => {
     },
     {
       vaccine: "Hib",
-      color: "#FF6F52",
+      color: "#BADD53",
       dosis: [
         { name: "1st dose", from: "2MONTHS", to: "2MONTHS" },
         { name: "2nd dose", from: "4MONTHS", to: "4MONTHS" },
@@ -44,12 +44,53 @@ export const getApplications = () => {
     },
     {
       vaccine: "Pneumococcal",
-      color: "#FF6F52",
+      color: "#3DC1D2",
       dosis: [
         { name: "1st dose", from: "2MONTHS", to: "2MONTHS" },
         { name: "2nd dose", from: "4MONTHS", to: "4MONTHS" },
         { name: "3rd dose", from: "6MONTHS", to: "6MONTHS" },
         { name: "4th dose", from: "12MONTHS", to: "15MONTHS" },
+      ],
+    },
+    {
+      vaccine: "Polio",
+      color: "#536DE5",
+      dosis: [
+        { name: "1st dose", from: "2MONTHS", to: "2MONTHS" },
+        { name: "2nd dose", from: "4MONTHS", to: "4MONTHS" },
+        { name: "3rd dose", from: "6MONTHS", to: "18MONTHS" },
+        { name: "4th dose", from: "4-6YEARS", to: "4-6YEARS" },
+      ],
+    },
+    {
+      vaccine: "Influenza (flu)**",
+      color: "#5A6175",
+      dosis: [
+        { name: "Yearly 1 or 2 dosis", from: "6MONTHS", to: "4-6YEARS" },
+      ],
+    },
+    {
+      vaccine: "MMR",
+      color: "#31A756",
+      dosis: [
+        { name: "1st dose", from: "12MONTHS", to: "15MONTHS" },
+        { name: "2nd dose", from: "4-6YEARS", to: "4-6YEARS" },
+      ],
+    },
+    {
+      vaccine: "Varicela (Chickenpox)",
+      color: "#574C8E",
+      dosis: [
+        { name: "1st dose", from: "12MONTHS", to: "15MONTHS" },
+        { name: "2nd dose", from: "4-6YEARS", to: "4-6YEARS" },
+      ],
+    },
+    {
+      vaccine: "HepA***",
+      color: "#F78FB4",
+      dosis: [
+        { name: "1st dose", from: "12MONTHS", to: "15MONTHS" },
+        { name: "2nd dose", from: "18MONTHS", to: "19-23MONTHS" },
       ],
     },
   ]);
